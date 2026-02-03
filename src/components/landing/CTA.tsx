@@ -27,11 +27,11 @@ const CTA = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                <Button variant="accent" size="xl">
-                  <Mail className="w-5 h-5" />
+                <Button variant="accent" size="xl" onClick={() => window.open('mailto:taranjot@markinglab.com', '_self') }>
+                  <Mail className="w-5 h-5"/>
                   Join the Waitlist
                 </Button>
-                <Button variant="outline" size="xl">
+                <Button variant="outline" size="xl" onClick={() => window.open('https://forms.cloud.microsoft/r/j4gQi2bAdE', '_blank')}>
                   Book A Demo
                   <ArrowRight className="w-5 h-5" />
                 </Button>

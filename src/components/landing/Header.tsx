@@ -50,12 +50,10 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-4">
-            <div className="hidden">
+          {/* <div className="md:flex items-center gap-4">
               <Button variant="ghost">Sign In</Button>
               <Button variant="accent">Get Started</Button>
-            </div>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button

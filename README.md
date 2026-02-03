@@ -10,10 +10,9 @@ Public landing page for Marking Lab
 - [Available scripts](#available-scripts)
 - [Project structure](#project-structure)
 - [Development notes](#development-notes)
-- [Testing & linting](#testing--linting)
+- [Testing \& linting](#testing--linting)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 

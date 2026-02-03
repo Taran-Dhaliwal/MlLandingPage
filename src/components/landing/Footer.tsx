@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={whiteLogo} alt="MarkingLab logo" className="h-12 w-auto" />
+              <img src={whiteLogo} alt="MarkingLab Inc." className="h-12 w-auto" />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
               AI-powered grading and feedback for post-secondary education. Saving educators time while improving student outcomes.
@@ -68,8 +68,12 @@ const Footer = () => {
               Questions or want a walkthrough? Book a demo and we will show you MarkingLab in action.
             </p>
             <div className="mt-4">
-              <Button size="sm" className="bg-white text-primary hover:scale-105 hover:shadow-medium hover:bg-white transition-transform duration-150 ease-out">
-                <a href="#book-demo">Book a Demo</a>
+              <Button 
+                size="sm" 
+                className="bg-white text-primary hover:scale-105 hover:shadow-medium hover:bg-white transition-transform duration-150 ease-out"
+                onClick={() => window.open('https://forms.cloud.microsoft/r/j4gQi2bAdE', '_blank')}
+              >
+                Book a Demo
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </div>

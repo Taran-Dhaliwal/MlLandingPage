@@ -12,9 +12,9 @@ const Hero = () => {
     }} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-20">
-        <div className="max-w-4xl mx-auto text-center pt-12 pb-20">
+        <div className="max-w-4xl mx-auto text-center pt-12 pb-8">
           {/* Badge */}
-          <div className="hidden inline-flex items-center gap-3 bg-background border border-primary/20 rounded-full px-5 py-2.5 mb-6 animate-fade-in shadow-sm hover:shadow-md transition-shadow duration-300">
+          {/* <div className="inline-flex items-center gap-3 bg-background border border-primary/20 rounded-full px-5 py-2.5 mb-6 animate-fade-in shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="flex -space-x-2">
               <div className="w-6 h-6 rounded-full bg-primary/20 border-2 border-background flex items-center justify-center text-[10px] font-bold text-primary">H</div>
               <div className="w-6 h-6 rounded-full bg-primary/30 border-2 border-background flex items-center justify-center text-[10px] font-bold text-primary">S</div>
@@ -22,10 +22,10 @@ const Hero = () => {
             </div>
             <span className="text-sm font-semibold text-primary">Trusted by 200+ Universities Worldwide</span>
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          </div>
+          </div> */}
 
           {/* Heading */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in text-balance" style={{
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mt-12 mb-6 text-foreground animate-fade-in text-balance" style={{
           animationDelay: '0.1s'
         }}>
             AI-Powered Grading
@@ -45,14 +45,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <Button variant="accent" size="xl" className="w-full sm:w-auto">
+            <Button variant="accent" size="xl" className="w-full sm:w-auto" onClick={() => window.open('https://forms.cloud.microsoft/r/j4gQi2bAdE', '_blank')}>
               Book a Demo
               <ArrowRight className="w-5 h-5" />
             </Button>
-            <Button variant="outline" size="xl" className="hidden w-full sm:w-auto">
+            {/* <Button variant="outline" size="xl" className="w-full sm:w-auto">
               <Play className="w-5 h-5" />
               Watch Demo
-            </Button>
+            </Button> */}
           </div>
 
           {/* Trust Points */}
@@ -65,7 +65,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              FIPPA Compliant
+              FIPPA and PIPEDA Compliant
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle className="w-4 h-4 text-primary" />
@@ -94,7 +94,7 @@ const Hero = () => {
                   </div>
                   <div className="flex-1 flex justify-center">
                     <div className="bg-background rounded-lg px-4 py-1.5 text-sm text-muted-foreground">
-                      MarkingLab/dashboard
+                      app.markinglab.com
                     </div>
                   </div>
                 </div>

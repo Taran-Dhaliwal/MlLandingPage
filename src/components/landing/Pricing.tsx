@@ -105,6 +105,7 @@ const Pricing = () => {
                   variant={tier.highlighted ? "accent" : "outline"}
                   size="lg"
                   className="w-full"
+                  onClick={() => window.open('mailto:taranjot@markinglab.com', '_self')}
                 >
                   Request Pricing
                 </Button>
