@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173 (or the port Vite reports) to view the app.
+Open http://localhost:8080 (or the port Vite reports) to view the app.
 
 ---
 
