@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Mail, Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
@@ -44,16 +44,19 @@ const Header = () => {
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            {/* <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
               Contact
-            </a>
+            </a> */}
           </nav>
 
           {/* Desktop CTA */}
-          {/* <div className="md:flex items-center gap-4">
-              <Button variant="ghost">Sign In</Button>
-              <Button variant="accent">Get Started</Button>
-          </div> */}
+          <div className="md:flex items-center gap-4">
+              {/* <Button variant="ghost">Sign In</Button> */}
+              <Button variant="accent" onClick={() => window.open('mailto:taranjot@markinglab.com', '_blank') }>
+                  <Mail className="w-5 h-5"/>
+                  Contact Us
+                </Button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button

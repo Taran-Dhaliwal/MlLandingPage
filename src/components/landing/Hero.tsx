@@ -45,7 +45,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <Button variant="accent" size="xl" className="w-full sm:w-auto" onClick={() => window.open('https://forms.cloud.microsoft/r/j4gQi2bAdE', '_blank')}>
+            <Button variant="accent" size="xl" className="w-full sm:w-auto"  onClick={() => window.open('https://outlook.office.com/book/MarkingLab@markinglab.com', '_blank')}>
               Book a Demo
               <ArrowRight className="w-5 h-5" />
             </Button>
