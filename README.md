@@ -1,6 +1,6 @@
 # MarkingLab
 
-AI-powered grading UI built with React, Vite, TypeScript, Tailwind CSS, and shadcn-ui.
+Public landing page for Marking Lab 
 
 ---
 
