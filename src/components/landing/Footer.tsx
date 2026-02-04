@@ -1,32 +1,32 @@
 import { Button } from "@/components/ui/button";
 import whiteLogo from "@/assets/logo-white.png";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 
 const footerLinks = {
-  product: [
-    { name: "Features", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Integrations", href: "#" },
-    { name: "Changelog", href: "#" },
-  ],
-  resources: [
-    { name: "Documentation", href: "#" },
-    { name: "API Reference", href: "#" },
-    { name: "Case Studies", href: "#" },
-    { name: "Blog", href: "#" },
-  ],
+  // product: [
+  //   { name: "Features", href: "#features" },
+  //   { name: "Pricing", href: "#pricing" },
+  //   { name: "Integrations", href: "#" },
+  //   { name: "Changelog", href: "#" },
+  // ],
+  // resources: [
+  //   { name: "Documentation", href: "#" },
+  //   { name: "API Reference", href: "#" },
+  //   { name: "Case Studies", href: "#" },
+  //   { name: "Blog", href: "#" },
+  // ],
   company: [
     { name: "Features", href: "#features" },
     { name: "How It Works", href: "#how-it-works" },
     { name: "Pricing", href: "#pricing" },
     { name: "Contact", href: "#contact" },
   ],
-  legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
-    { name: "FERPA Compliance", href: "#" },
-    { name: "Security", href: "#" },
-  ],
+  // legal: [
+  //   { name: "Privacy Policy", href: "#" },
+  //   { name: "Terms of Service", href: "#" },
+  //   { name: "FERPA Compliance", href: "#" },
+  //   { name: "Security", href: "#" },
+  // ],
 };
 
 const Footer = () => {
@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={whiteLogo} alt="MarkingLab logo" className="h-12 w-auto" />
+              <img src={whiteLogo} alt="MarkingLab Inc." className="h-12 w-auto" />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
               AI-powered grading and feedback for post-secondary education. Saving educators time while improving student outcomes.
@@ -68,8 +68,12 @@ const Footer = () => {
               Questions or want a walkthrough? Book a demo and we will show you MarkingLab in action.
             </p>
             <div className="mt-4">
-              <Button size="sm" className="bg-white text-primary hover:scale-105 hover:shadow-medium hover:bg-white transition-transform duration-150 ease-out">
-                <a href="#book-demo">Book a Demo</a>
+              <Button 
+                size="sm" 
+                className="bg-white text-primary hover:scale-105 hover:shadow-medium hover:bg-white transition-transform duration-150 ease-out"
+                 onClick={() => window.open('https://outlook.office.com/book/MarkingLab@markinglab.com', '_blank')}
+              >
+                Book a Demo
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </div>
@@ -81,16 +85,16 @@ const Footer = () => {
           <p className="text-primary-foreground/60 text-sm">
             © {new Date().getFullYear()} MarkingLab. All rights reserved.
           </p>
-          <div className="hidden flex items-center gap-6">
-            <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
-              Twitter
+          <div className="flex items-center gap-6">
+            <a href="mailto:taranjot@markinglab.com" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
+              taranjot@markinglab.com
             </a>
-            <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
+            {/* <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
               LinkedIn
             </a>
             <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
               GitHub
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

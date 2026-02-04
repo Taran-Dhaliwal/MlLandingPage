@@ -105,6 +105,7 @@ const Pricing = () => {
                   variant={tier.highlighted ? "accent" : "outline"}
                   size="lg"
                   className="w-full"
+                  onClick={() => window.open('https://forms.cloud.microsoft/r/j4gQi2bAdE', '_blank') }
                 >
                   Request Pricing
                 </Button>
